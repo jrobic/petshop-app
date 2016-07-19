@@ -80,7 +80,6 @@ class ManageAnimalPage extends Component {
         this.redirect();
       })
       .catch((error) => {
-        console.log('error save', error);
         toastr.error(error);
         this.setState({ saving: false });
       });

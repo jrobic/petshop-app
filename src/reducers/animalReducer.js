@@ -13,7 +13,6 @@ export default function animalReducer(state = initialState.animals, action) {
         Object.assign({}, action.animal),
       ];
     case types.REMOVE_ANIMAL_SUCCESS:
-      console.log(state, action);
       return [...state.filter(animal => animal.id !== action.id)];
     default:
       return state;
