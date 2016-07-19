@@ -1,0 +1,29 @@
+.animal-page {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  text-align: center;
+}
+
+.animal-page-add-button {
+  position: fixed;
+  right: 5%;
+  top: 80px;
+  z-index: 5;
+}
+
+.animal-page-form {
+  padding: 25px;
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: row;
+}
+
+.animal-page-form > div {
+  padding: 0 15px;
+
+  .mdl-textfield__error {
+    visibility: visible;
+  }
+}
