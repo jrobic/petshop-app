@@ -1,6 +1,5 @@
 const webpack = require('webpack');
 const path = require('path');
-const OpenBrowserPlugin = require('open-browser-webpack-plugin');
 const eslintFriendlyFormatter = require('eslint-friendly-formatter');
 
 
@@ -24,7 +23,6 @@ module.exports = {
   },
   plugins: [
     new webpack.NoErrorsPlugin(),
-    new OpenBrowserPlugin({ url: 'http://localhost:8080' }),
   ],
   eslint: {
     formatter: eslintFriendlyFormatter,

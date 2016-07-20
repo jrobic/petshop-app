@@ -4,7 +4,19 @@
 
 ## Install
 
-- Required: nodejs 6, npm 3
+**Required**
+- docker: **1.10**
+- docker-compose: **1.6.2**
+
+or
+
+- **nodejs 6**, **npm 3**
+
+```
+docker-compose build
+```
+
+or
 
 ```
 npm install
@@ -13,8 +25,28 @@ npm install
 ## Start App
 
 ```
+docker-compose run app npm start
+```
+
+or
+
+```
 npm start
  ```
+
+## Lint
+
+When start dev environment, when changed file, webpack lint automatically with eslint-loader before babel.
+
+```
+docker-compose run app npm run lint
+```
+
+or
+
+```
+npm run lint
+```
 
 ## Stack
 
@@ -32,4 +64,4 @@ npm start
 ### Test
 - [ ] Components
 - [ ] Redux flow
-
+- [ ] Build production
